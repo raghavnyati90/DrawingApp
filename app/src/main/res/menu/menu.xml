@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="schemas.android.com/tools"
+    tools:context="edu.sdsu.rnyati.drawingapp.MainActivity"
+    xmlns:drawingapplication="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/color_mode"
+        android:orderInCategory="100"
+        drawingapplication:showAsAction="always|withText"
+        android:title="@string/color">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:id="@+id/blue"
+                    android:title="@string/blue" />
+                <item android:id="@+id/green"
+                    android:title="@string/green" />
+                <item android:id="@+id/red"
+                    android:title="@string/red" />
+                <item android:id="@+id/black"
+                    android:title="@string/black" />
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/app_mode"
+        android:orderInCategory="200"
+        drawingapplication:showAsAction="always|withText"
+        android:title="@string/mode">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:id="@+id/draw"
+                    android:title="@string/draw" />
+                <item android:id="@+id/move"
+                    android:title="@string/move" />
+                <item android:id="@+id/delete"
+                    android:title="@string/delete" />
+            </group>
+        </menu>
+    </item>
+
+</menu>
